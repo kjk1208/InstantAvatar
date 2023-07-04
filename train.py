@@ -11,7 +11,11 @@ from omegaconf import OmegaConf
 
 @hydra.main(config_path="./confs", config_name="SNARF_NGP")
 def main(opt):
+
+    # random seed 
     pl.seed_everything(opt.seed)
+    
+    # weight save option
     torch.set_printoptions(precision=6)
     print(f"Switch to {os.getcwd()}")
 
