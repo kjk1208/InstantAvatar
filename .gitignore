@@ -1,3 +1,5 @@
 outputs/
+data/
+env/
 __pycache__/
 *.swp
